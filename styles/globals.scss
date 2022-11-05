@@ -7,6 +7,4 @@
 @import "base/fonts";
 @import "base/icon";
 @import "../public/icons/style.css";
-body {
-	@apply font-cairo;
-}
+@import "base/typography";

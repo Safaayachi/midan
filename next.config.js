@@ -5,7 +5,6 @@ const nextConfig = {
 	reactStrictMode: true,
 	trailingSlash: true,
 	output: "standalone",
-	optimizeFonts: false,
 	images: {
 		domains: [
 			"images.unsplash.com",
