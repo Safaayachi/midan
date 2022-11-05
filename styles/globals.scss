@@ -4,7 +4,13 @@
 
 @import "base/normalize";
 @import "base/reset";
+@import "base/typography";
 @import "base/fonts";
 @import "base/icon";
+@import "components/scrollbar";
+@import "components/buttons";
+@import "components/inputs";
+@import "components/slider";
+@import "components/pagination";
+@import "components/nprogress.scss";
 @import "../public/icons/style.css";
-@import "base/typography";
