@@ -12,10 +12,10 @@
 	"wishlist": "المفضلة",
 	"arabic": "عربية",
 	"english": "English",
-	"language": "اللغة",
+	"language": "AR",
 	"about": "حول",
 	"common-questions": "الأسئلة الشائعة",
-	"home": "الصفحة الرئيسية",
+	"home": " الرئيسية",
 	"adults": "البالغون",
 	"children": "الأطفال",
 	"guests": "النزلاء",
@@ -81,5 +81,7 @@
 	"sort-by": "ترتيب حسب:",
 	"sum-all": "الإجمالي",
 	"social-media": "مواقع التواصل",
-	"login": "تسجيل الدخول"
+	"login": "تسجيل الدخول",
+	"review":"تقييم",
+	"join-us":"انضم إلينا الان و تمتع بخدماتنا"
 }

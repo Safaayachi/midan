@@ -12,7 +12,7 @@
 	"wishlist": "Favorite",
 	"arabic": "Arabic",
 	"english": "English",
-	"language": "The language",
+	"language": "EN",
 	"about": "About",
 	"common-questions": "Common questions",
 	"home": "Home",
@@ -81,5 +81,7 @@
 	"sort-by": "Sort By :",
 	"sum-all": "Total",
 	"social-media": "Social Media",
-	"login": "Login"
+	"login": "Login",
+	"review": "Review",
+	"join-us":"Join us now and enjoy our services"
 }
