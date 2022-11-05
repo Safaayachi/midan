@@ -1,0 +1,16 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#283202",
+    "titleBar.activeBackground": "#313b07",
+    "titleBar.activeForeground": "#F9FBF4"
+  },
+  "cSpell.words": [
+    "datepicker",
+    "googlebot",
+    "headlessui",
+    "nositelinkssearchbox",
+    "notranslate",
+    "sitelinks",
+    "tailwindcss"
+  ]
+}

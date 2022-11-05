@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "base/normalize";
+@import "base/reset";
+@import "base/fonts";
+@import "base/icon";
+@import "../public/icons/style.css";
+body {
+	@apply font-cairo;
+}
