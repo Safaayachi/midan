@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { format, addDays } from "date-fns";
 import { useLocalStorage } from "react-use";
+import RoomsSearch from "../components/rooms-search";
 
 const Home: NextPage<{}> = () => {
 	const { t, i18n } = useTranslation([
@@ -23,6 +24,38 @@ const Home: NextPage<{}> = () => {
 		"terms",
 		"input",
 	]);
+	const router = useRouter();
+	const {
+		register,
+		formState: { errors, isValid },
+		handleSubmit,
+	} = useForm({
+		reValidateMode: "onChange",
+		mode: "all",
+	});
+	const [
+		chosenRoomsStorage,
+		setChosenRoomsStorage,
+		removeChosenRoomsStorage,
+	] = useLocalStorage("chosenRooms", []);
+	const [guestInfo, setGuestInfo, removeGuestInfo] = useLocalStorage(
+		"guestInfo",
+		{}
+	);
+	const [
+		selectedHotelStorage,
+		setSelectedHotelStorage,
+		removeSelectedHotelStorage,
+	] = useLocalStorage("selectedHotel", {});
+	const handleGoToSearch = (data: any) => {
+		router.push({
+			pathname: "/search",
+			query: data,
+		});
+		removeChosenRoomsStorage();
+		removeGuestInfo();
+		removeSelectedHotelStorage();
+	};
 	return (
 		<>
 			<HeadSeo
@@ -34,7 +67,15 @@ const Home: NextPage<{}> = () => {
 			/>
 			<Layout>
 				<div className="pt-20">
-					
+					<div className="hidden container px-6 sm:mx-auto lg:flex">
+						<div className="flex flex-row gap-10 justify-between">
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+					<div className="container px-6 sm:mx-auto pt-[33rem] 2xl:pt-[35rem] pb-28 md:px-10 h-full">
+						<RoomsSearch goToSearch={handleGoToSearch} />
+					</div>
 				</div>
 			</Layout>
 		</>
