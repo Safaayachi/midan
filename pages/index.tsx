@@ -13,7 +13,16 @@ import { format, addDays } from "date-fns";
 import { useLocalStorage } from "react-use";
 
 const Home: NextPage<{}> = () => {
-	const { t, i18n } = useTranslation(["home","common","button","validation","auth"]);
+	const { t, i18n } = useTranslation([
+		"home",
+		"common",
+		"button",
+		"validation",
+		"auth",
+		"privacy",
+		"terms",
+		"input",
+	]);
 	return (
 		<>
 			<HeadSeo
@@ -23,8 +32,11 @@ const Home: NextPage<{}> = () => {
 				ogTwitterImage={siteMetadata.siteLogoSquare}
 				ogType={"website"}
 			/>
-			<Layout><div></div></Layout>
-			
+			<Layout>
+				<div className="pt-20">
+					
+				</div>
+			</Layout>
 		</>
 	);
 };
@@ -34,7 +46,16 @@ export const getStaticProps: GetStaticProps = async (context) => {
 		props: {
 			...(await serverSideTranslations(
 				context.locale as string,
-				["home","common","button","validation","auth"],
+				[
+					"home",
+					"common",
+					"button",
+					"validation",
+					"auth",
+					"privacy",
+					"terms",
+					"input",
+				],
 				nextI18NextConfig
 			)),
 		},

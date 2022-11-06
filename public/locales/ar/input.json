@@ -30,5 +30,7 @@
 	"write-your-problem": "يرجى إدخال رسالتك",
 	"i-agree-on-data-processing": "أوافق على معالجة بياناتي الشخصية وفقا لـ",
 	"notify-me-with-deals": "نعم، أخبرني عن العروض والمميزات الجديدة.",
-	"please-write-demands-in-english": "الرجاء كتابة طلباتك باللغة الإنجليزية."
+	"please-write-demands-in-english": "الرجاء كتابة طلباتك باللغة الإنجليزية.",
+	"subscribe-newsletter":"إشترك في النيوزلاتر",
+	"newsletter-label":"تلقي أحدث اخبارنا"
 }

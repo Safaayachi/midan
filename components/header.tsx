@@ -7,18 +7,18 @@ import { useState, Fragment } from "react";
 import AuthDrop from "./authDrop";
 import Language from "./language";
 const Header = () => {
-	const { t } = useTranslation(["common", "button", "home","auth"]);
+	const { t } = useTranslation(["common", "button", "home", "auth"]);
 	return (
 		<Fragment>
-			<header>
-				<nav className="relative flex  items-center container sm:mx-auto z-10 py-3 px-6 justify-between">
+			<header className="flex items-center z-20 w-full bg-white fixed">
+				<nav className="relative flex  items-center container sm:mx-auto  py-3 px-6 justify-between ">
 					<div className="flex gap-2">
 						<Link passHref href={"/"}>
 							<div className="btn border-primary text-primary text-xs py-1 px-6 cursor-pointer">
 								{t("common:contact-us")}
 							</div>
 						</Link>
-						<AuthDrop/>
+						<AuthDrop />
 					</div>
 					<div className="flex flex-row gap-10 items-center text-center ">
 						<Language />
