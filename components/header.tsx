@@ -13,7 +13,7 @@ const Header = () => {
 			<header className="flex items-center z-20 w-full bg-white fixed">
 				<nav className="relative flex  items-center container sm:mx-auto  py-3 px-6 justify-between ">
 					<div className="flex gap-2">
-						<Link passHref href={"/"}>
+						<Link passHref href={"/contact"}>
 							<div className="btn border-primary text-primary text-xs py-1 px-6 cursor-pointer">
 								{t("common:contact-us")}
 							</div>

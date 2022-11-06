@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { Popover } from "@headlessui/react";
 import React, { Fragment } from "react";
+import Link from "next/link";
 
 const AuthDrop = () => {
 	const { t } = useTranslation(["common", "search", "auth"]);
@@ -15,15 +16,19 @@ const AuthDrop = () => {
 					<label className="text-xs font-bold">
 						{t(`common:join-us`)}
 					</label>
-					<div className="btn border-primary text-primary cursor-pointer text-xs">
-						{t(`auth:register`)}
-					</div>
+					<Link passHref href={"/register"}>
+						<div className="btn border-primary text-primary cursor-pointer text-xs">
+							{t(`auth:register`)}
+						</div>
+					</Link>
 					<label className="text-xs font-bold">
 						{t(`auth:already-member`)}
 					</label>
-					<div className="btn border-primary text-primary cursor-pointer text-xs">
-						{t(`auth:login`)}
-					</div>
+					<Link passHref href={"/login"}>
+						<div className="btn border-primary text-primary cursor-pointer text-xs">
+							{t(`auth:login`)}
+						</div>
+					</Link>
 				</div>
 			</Popover.Panel>
 		</Popover>
