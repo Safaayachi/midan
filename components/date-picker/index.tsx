@@ -89,12 +89,12 @@ const DatePicker = ({ changeDate, chosenDates }: Props) => {
 								<div className="flex items-center gap-4  w-1/2">
 									<div className="flex flex-col gap-1">
 										<div className="flex justify-start items-center gap-2">
-											<i className="icon-calendar-minus text-secondary text-xs"></i>
-											<span className="text-secondary text-xs">
+											<i className="icon-calendar_today_black_24dp-3 text-primary text-lg"></i>
+											<span className="text-white text-xs">
 												{t("input:arrival-date")}
 											</span>
 										</div>
-										<div className="text-dark text-lg">
+										<div className="text-white text-lg">
 											{state.startDate
 												? state.startDate.toLocaleDateString(
 														i18n.language === "ar"
@@ -114,13 +114,13 @@ const DatePicker = ({ changeDate, chosenDates }: Props) => {
 								<div className="flex items-center justify-end gap-4 w-1/2">
 									<div className="flex flex-col gap-1">
 										<div className="flex justify-start items-center gap-2">
-											<span className="text-secondary text-xs">
+											<span className="text-white text-xs">
 												{t("input:exit-date")}
 											</span>
-											<i className="icon-calendar-minus text-secondary text-xs"></i>
+											<i className="icon-calendar_today_black_24dp-3 text-primary text-lg"></i>
 										</div>
 
-										<div className="text-dark text-lg">
+										<div className="text-white text-lg">
 											{state.endDate
 												? state.endDate.toLocaleDateString(
 														i18n.language === "ar"

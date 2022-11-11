@@ -145,7 +145,7 @@ const Home: NextPage<{}> = () => {
 											<Tab as={Fragment}>
 												{({ selected }) => (
 													<div
-														className={`h-1.5 w-1.5 border border-solid border-primary rotate-45 ${
+														className={`h-1.5 w-1.5 border border-solid border-primary cursor-pointer rotate-45 ${
 															selected
 																? "bg-primary"
 																: ""
@@ -156,7 +156,7 @@ const Home: NextPage<{}> = () => {
 											<Tab as={Fragment}>
 												{({ selected }) => (
 													<div
-														className={`h-1.5 w-1.5 border border-solid border-primary rotate-45 ${
+														className={`h-1.5 w-1.5 border border-solid border-primary cursor-pointer rotate-45 ${
 															selected
 																? "bg-primary"
 																: ""
@@ -167,7 +167,7 @@ const Home: NextPage<{}> = () => {
 											<Tab as={Fragment}>
 												{({ selected }) => (
 													<div
-														className={`h-1.5 w-1.5 border border-solid border-primary rotate-45 ${
+														className={`h-1.5 w-1.5 border border-solid border-primary cursor-pointer rotate-45 ${
 															selected
 																? "bg-primary"
 																: ""
@@ -178,7 +178,7 @@ const Home: NextPage<{}> = () => {
 											<Tab as={Fragment}>
 												{({ selected }) => (
 													<div
-														className={`h-1.5 w-1.5 border border-solid border-primary rotate-45 ${
+														className={`h-1.5 w-1.5 border border-solid border-primary cursor-pointer rotate-45 ${
 															selected
 																? "bg-primary"
 																: ""
@@ -192,7 +192,7 @@ const Home: NextPage<{}> = () => {
 							</Tab.Group>
 						</div>
 					</div>
-					<div className="container px-6 sm:mx-auto md:px-10 h-full">
+					<div className="h-full">
 						<RoomsSearch goToSearch={handleGoToSearch} />
 					</div>
 					<section className="w-full py-4 ">
@@ -271,6 +271,182 @@ const Home: NextPage<{}> = () => {
 									<Link passHref href={"/"}>
 										<i className="icon-iconmonstr-snapchat-1 text-xs text-white cursor-pointer"></i>
 									</Link>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section className="w-full container sm:mx-auto px-6  md:px-10 ">
+						<div className="flex flex-row gap-10 items-center justify-center w-full py-4 container sm:mx-auto px-6  md:px-10">
+							<div className="flex flex-row items-center w-1/6">
+								<div className="w-full h-px bg-gradient-to-r from-primary via-white to-white"></div>
+								<div className="h-1.5 w-1.5 border border-solid border-primary rotate-45"></div>
+							</div>
+							<div className="text-2xl font-bold">
+								{t("common:services")}
+							</div>
+							<div className="flex flex-row items-center w-1/6">
+								<div className="h-1.5 w-1.5 border border-solid border-primary rotate-45"></div>
+								<div className="w-full h-px bg-gradient-to-l from-primary via-white to-white"></div>
+							</div>
+						</div>
+						<div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-4">
+							<div className="flex flex-col items-center gap-1">
+								<i className="icon-fullscreen_black_24dp text-5xl text-primary cursor-pointer"></i>
+								<div className="font-bold text-sm">
+									{t("common:coffeeshop")}
+								</div>
+								<p className="text-xs">
+									{t("home:get-to-know-us")}
+								</p>
+								<div className="flex flex-row gap-1 items-center text-xs text-primary font-bold">
+									<div>5000</div>
+									<i className="icon-call_black_24dp-3 "></i>
+								</div>
+							</div>
+							<div className="flex flex-col items-center gap-1">
+								<i className="icon-fullscreen_black_24dp text-5xl text-primary cursor-pointer"></i>
+								<div className="font-bold text-sm">
+									{t("common:resturant")}
+								</div>
+								<p className="text-xs">
+									{t("home:get-to-know-us")}
+								</p>
+								<div className="flex flex-row gap-1 items-center text-xs text-primary font-bold">
+									<div>5000</div>
+									<i className="icon-call_black_24dp-3 "></i>
+								</div>
+							</div>
+							<div className="flex flex-col items-center gap-1">
+								<i className="icon-fullscreen_black_24dp text-5xl text-primary cursor-pointer"></i>
+								<div className="font-bold text-sm">
+									{t("common:sport")}
+								</div>
+								<p className="text-xs">
+									{t("home:get-to-know-us")}
+								</p>
+								<div className="flex flex-row gap-1 items-center text-xs text-primary font-bold">
+									<div>5000</div>
+									<i className="icon-call_black_24dp-3 "></i>
+								</div>
+							</div>
+							<div className="flex flex-col items-center gap-1">
+								<i className="icon-fullscreen_black_24dp text-5xl text-primary cursor-pointer"></i>
+								<div className="font-bold text-sm">
+									{t("common:laundry")}
+								</div>
+								<p className="text-xs">
+									{t("home:get-to-know-us")}
+								</p>
+								<div className="flex flex-row gap-1 items-center text-xs text-primary font-bold">
+									<div>5000</div>
+									<i className="icon-call_black_24dp-3 "></i>
+								</div>
+							</div>
+							<div className="flex flex-col items-center gap-1">
+								<i className="icon-fullscreen_black_24dp text-5xl text-primary cursor-pointer"></i>
+								<div className="font-bold text-sm">
+									{t("common:wifi")}
+								</div>
+								<p className="text-xs">
+									{t("home:get-to-know-us")}
+								</p>
+								<div className="flex flex-row gap-1 items-center text-xs text-primary font-bold">
+									<div>5000</div>
+									<i className="icon-call_black_24dp-3 "></i>
+								</div>
+							</div>
+							<div className="flex flex-col items-center gap-1">
+								<i className="icon-fullscreen_black_24dp text-5xl text-primary cursor-pointer"></i>
+								<div className="font-bold text-sm">
+									{t("common:the-pool")}
+								</div>
+								<p className="text-xs">
+									{t("home:get-to-know-us")}
+								</p>
+								<div className="flex flex-row gap-1 items-center text-xs text-primary font-bold">
+									<div>5000</div>
+									<i className="icon-call_black_24dp-3 "></i>
+								</div>
+							</div>
+							<div className="flex flex-col items-center gap-1">
+								<i className="icon-fullscreen_black_24dp text-5xl text-primary cursor-pointer"></i>
+								<div className="font-bold text-sm">
+									{t("common:room-services")}
+								</div>
+								<p className="text-xs">
+									{t("home:get-to-know-us")}
+								</p>
+								<div className="flex flex-row gap-1 items-center text-xs text-primary font-bold">
+									<div>5000</div>
+									<i className="icon-call_black_24dp-3 "></i>
+								</div>
+							</div>
+							<div className="flex flex-col items-center gap-1">
+								<i className="icon-fullscreen_black_24dp text-5xl text-primary cursor-pointer"></i>
+								<div className="font-bold text-sm">
+									{t("common:kindergarten")}
+								</div>
+								<p className="text-xs">
+									{t("home:get-to-know-us")}
+								</p>
+								<div className="flex flex-row gap-1 items-center text-xs text-primary font-bold">
+									<div>5000</div>
+									<i className="icon-call_black_24dp-3 "></i>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div className="flex flex-row gap-10 items-center justify-center w-full py-4 container sm:mx-auto px-6  md:px-10">
+						<div className="flex flex-row items-center w-1/6">
+							<div className="w-full h-px bg-gradient-to-r from-primary via-white to-white"></div>
+							<div className="h-1.5 w-1.5 border border-solid border-primary rotate-45"></div>
+						</div>
+						<div className="text-2xl font-bold">
+							{t("common:resturant")}
+						</div>
+						<div className="flex flex-row items-center w-1/6">
+							<div className="h-1.5 w-1.5 border border-solid border-primary rotate-45"></div>
+							<div className="w-full h-px bg-gradient-to-l from-primary via-white to-white"></div>
+						</div>
+					</div>
+					<section className="w-full container sm:mx-auto px-6  md:px-10 py-6">
+						<div className="flex flex-col">
+							<div className="text-2xl text-primary font-bold py-4">
+								{t("common:resturant-description")}
+							</div>
+							<div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+								<div className="relative  h-[400px]">
+									<Image
+										alt={"midan-cover"}
+										src={"/images/food1.png"}
+										layout="fill"
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className="relative  h-[400px]">
+									<Image
+										alt={"midan-cover"}
+										src={"/images/food2.png"}
+										layout="fill"
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className="relative  h-[400px]">
+									<Image
+										alt={"midan-cover"}
+										src={"/images/food3.png"}
+										layout="fill"
+										objectFit="cover"
+									></Image>
+								</div>
+								<div className="relative  h-[400px]">
+									<Image
+										alt={"midan-cover"}
+										src={"/images/food4.png"}
+										layout="fill"
+										objectFit="cover"
+									></Image>
+									1
 								</div>
 							</div>
 						</div>

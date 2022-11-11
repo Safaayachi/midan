@@ -60,7 +60,7 @@ const RoomsSearch = ({ goToSearch }: Props) => {
 	}, [router.query]);
 	return (
 		<div
-			className={` flex flex-col lg:flex-row lg:justify-between lg:shadow w-full p-2.5 lg:rounded-full bg-transparent lg:bg-white lg:gap-6`}
+			className={` flex flex-col lg:flex-row lg:justify-between  lg:shadow w-full p-2.5  bg-transparent lg:bg-secondary lg:py-6 lg:gap-6`}
 		>
 			<div className="w-full grid grid-cols-12 gap-4 lg:gap-0 ">
 				<DatePicker
@@ -75,8 +75,8 @@ const RoomsSearch = ({ goToSearch }: Props) => {
 					className={`relative w-full px-6 flex flex-col lg:gap-1 items-start justify-center col-span-12 lg:col-span-3 py-2 lg:py-0 bg-white lg:bg-transparent rounded-full lg:rounded-none`}
 				>
 					<div className="flex justify-start items-center gap-3">
-						<i className="icon-badge-percent text-secondary text-sm"></i>
-						<div className="text-secondary text-xs">
+						<i className="icon-badge-percent text-white text-sm"></i>
+						<div className="text-white text-xs">
 							{t("input:promo-code")}
 						</div>
 					</div>
@@ -97,7 +97,7 @@ const RoomsSearch = ({ goToSearch }: Props) => {
 
 			<button
 				onClick={() => goToSearch(queriesObject)}
-				className={`btn w-full btn-primary font-ruqaa px-2 lg:w-2/12 text-xl font-bold mt-4 lg:mt-0 `}
+				className={`btn w-full border-secondary  lg:border-dark-tint lg:text-white px-2 lg:w-1/12 text-md font-bold mt-4 lg:mt-0 `}
 			>
 				<i className="icon-search_black_24dp-3 text-2xl"></i>
 				{t("common:search")}
