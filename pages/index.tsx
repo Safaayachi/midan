@@ -192,9 +192,89 @@ const Home: NextPage<{}> = () => {
 							</Tab.Group>
 						</div>
 					</div>
-					<div className="container px-6 sm:mx-auto pt-[33rem] 2xl:pt-[35rem] pb-28 md:px-10 h-full">
+					<div className="container px-6 sm:mx-auto md:px-10 h-full">
 						<RoomsSearch goToSearch={handleGoToSearch} />
 					</div>
+					<section className="w-full py-4 ">
+						<div className="flex flex-row gap-10 items-center justify-center w-full py-12 container sm:mx-auto px-6  md:px-10">
+							<div className="flex flex-row items-center w-1/6">
+								<div className="w-full h-px bg-gradient-to-r from-primary via-white to-white"></div>
+								<div className="h-1.5 w-1.5 border border-solid border-primary rotate-45"></div>
+							</div>
+							<div className="text-2xl font-bold">
+								{t("home:get-to-know-us")}
+							</div>
+							<div className="flex flex-row items-center w-1/6">
+								<div className="h-1.5 w-1.5 border border-solid border-primary rotate-45"></div>
+								<div className="w-full h-px bg-gradient-to-l from-primary via-white to-white"></div>
+							</div>
+						</div>
+						<div className="relative mb-10 container sm:mx-auto px-6">
+							<iframe
+								className="w-full aspect-video p-1"
+								src="https://www.youtube.com/embed/qkkyLadgrw0"
+								title="midan"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;picture-in-picture"
+								allowFullScreen
+							></iframe>
+						</div>
+
+						<div className="flex flex-col md:flex-row justify-center items-center gap-6 py-3 container sm:mx-auto">
+							<div className="text-sm font-bold">
+								{t("home:welcoming")}
+							</div>
+							<button className="btn border-primary text-primary  py-3 w-full md:w-40  cursor-pointer">
+								{t("common:book-now")}
+							</button>
+						</div>
+						<div className="flex w-full flex-col md:flex-row py-6">
+							<div className="bg-primary flex flex-col  md:w-1/3 items-center py-4">
+								<div className="flex flex-row gap-1 items-center">
+									<i className="icon-fullscreen_black_24dp text-lg text-white"></i>
+									<div className="text-sm font-bold text-white">
+										{t("home:address")}
+									</div>
+								</div>
+								<h3 className="text-xs text-white ">
+									{t("home:address-description")}
+								</h3>
+							</div>
+
+							<div className="flex flex-row gap-2 md:flex-col md:gap-0 md:w-1/3 bg-primary-tint md:bg-primary items-center justify-center py-3">
+								<div className="flex flex-row gap-1 items-center">
+									<i className="icon-call_black_24dp-3 text-lg text-white"></i>
+									<div className="text-xs text-white">
+										+966 530 301 827
+									</div>
+								</div>
+								<div className="flex flex-row gap-1 items-center">
+									<i className="icon-call_black_24dp-3 text-lg text-white"></i>
+									<div className="text-xs text-white">
+										+966 530 301 827
+									</div>
+								</div>
+							</div>
+							<div className="flex flex-row  md:flex-col gap-2 md:w-1/3 bg-primary-tint md:bg-primary items-center justify-center py-3">
+								<div className="text-sm text-white text-center font-semibold">
+									{t("common:follow-us")}
+								</div>
+								<div className="flex flex-row gap-2">
+									<Link passHref href={"/"}>
+										<i className="icon-icons8-facebook text-xs text-white cursor-pointer"></i>
+									</Link>
+									<Link passHref href={"/"}>
+										<i className="icon-Group-48 text-xs text-white cursor-pointer"></i>
+									</Link>
+									<Link passHref href={"/"}>
+										<i className="icon-icons8-twitter text-xs text-white cursor-pointer"></i>
+									</Link>
+									<Link passHref href={"/"}>
+										<i className="icon-iconmonstr-snapchat-1 text-xs text-white cursor-pointer"></i>
+									</Link>
+								</div>
+							</div>
+						</div>
+					</section>
 				</div>
 			</Layout>
 		</>
