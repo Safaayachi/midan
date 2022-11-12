@@ -14,6 +14,7 @@ import { useLocalStorage } from "react-use";
 import RoomsSearch from "../components/rooms-search";
 import { Tab } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import Carousel from "../components/carousel/Carousel";
 
 const Home: NextPage<{}> = () => {
 	const { t, i18n } = useTranslation([
@@ -396,6 +397,23 @@ const Home: NextPage<{}> = () => {
 							</div>
 						</div>
 					</section>
+					<section className="w-full py-4 bg-secondary">
+						<div className="flex flex-row gap-10 items-center justify-center w-full py-4 container sm:mx-auto px-6  md:px-10">
+							<div className="flex flex-row items-center w-1/6">
+								<div className="w-full h-px bg-gradient-to-r from-white  to-secondary"></div>
+								<div className="h-1.5 w-1.5 border border-solid border-white rotate-45"></div>
+							</div>
+							<div className="text-2xl font-bold text-white">
+								{t("common:rooms")}
+							</div>
+							<div className="flex flex-row items-center w-1/6">
+								<div className="h-1.5 w-1.5 border border-solid border-white rotate-45"></div>
+								<div className="w-full h-px bg-gradient-to-l from-white  to-secondary"></div>
+							</div>
+						</div>
+
+						<Carousel />
+					</section>
 					<div className="flex flex-row gap-10 items-center justify-center w-full py-4 container sm:mx-auto px-6  md:px-10">
 						<div className="flex flex-row items-center w-1/6">
 							<div className="w-full h-px bg-gradient-to-r from-primary via-white to-white"></div>
@@ -409,7 +427,8 @@ const Home: NextPage<{}> = () => {
 							<div className="w-full h-px bg-gradient-to-l from-primary via-white to-white"></div>
 						</div>
 					</div>
-					<section className="w-full container sm:mx-auto px-6  md:px-10 py-6">
+
+					<section className="w-full container sm:mx-auto px-6  md:px-10 py-12">
 						<div className="flex flex-col">
 							<div className="text-2xl text-primary font-bold py-4">
 								{t("common:resturant-description")}
